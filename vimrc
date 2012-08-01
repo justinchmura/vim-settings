@@ -32,6 +32,8 @@ set history=50
 set t_Co=256
 
 colorscheme zenburn
+let g:zenburn_high_Contrast=1
+colors zenburn
 
 let mapleader = ","
 
