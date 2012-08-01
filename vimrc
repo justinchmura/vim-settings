@@ -31,7 +31,7 @@ set history=50
 
 set t_Co=256
 
-colorscheme molokai
+colorscheme zenburn
 
 let mapleader = ","
 
