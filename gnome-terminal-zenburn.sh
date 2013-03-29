@@ -40,7 +40,7 @@ echo    "You have selected:"
 echo -e "  Profile: $profile_name (gconf key: ${profiles[$profile_key]})\n"
 
 #typeset -u confirmation
-echo -n "Is this correct? (YES to continue) "
+echo -n "Is this correct? (type YES to continue) "
 read confirmation
 confirmation=$(echo $confirmation | tr '[:lower:]' '[:upper:]')
 if [[ $confirmation != YES ]]; then

@@ -13,6 +13,7 @@ if has("autocmd")
   filetype plugin on
 endif
 
+" Enable syntax highlighting
 syntax on
 
 set smartindent
@@ -28,9 +29,12 @@ set number
 set numberwidth=4
 set incsearch
 set history=50
-
 set t_Co=256
 
+" Disable code folding for markdown files
+let g:vim_markdown_folding_disabled=1
+
+" Enable zenburn color scheme
 colorscheme zenburn
 let g:zenburn_high_Contrast=1
 colors zenburn
