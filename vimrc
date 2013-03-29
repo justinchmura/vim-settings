@@ -39,6 +39,9 @@ colorscheme zenburn
 let g:zenburn_high_Contrast=1
 colors zenburn
 
+" Add a marker at line 80
+set colorcolumn=72
+
 let mapleader = ","
 
 autocmd BufWritePre *.js :%s/\s\+$//e
