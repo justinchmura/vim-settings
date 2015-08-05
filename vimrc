@@ -19,9 +19,9 @@ syntax on
 set smartindent
 set cindent
 set autoindent
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 set expandtab
 set smarttab
 set smartcase
@@ -30,6 +30,7 @@ set numberwidth=4
 set incsearch
 set history=50
 set t_Co=256
+set nowrap
 
 " Disable code folding for markdown files
 let g:vim_markdown_folding_disabled=1
@@ -45,6 +46,9 @@ set colorcolumn=72
 let mapleader = ","
 
 autocmd BufWritePre *.js :%s/\s\+$//e
+
+" Open NERDtree by default
+autocmd vimenter * NERDTree
 
 source $HOME/.vim/highlighting.vim
 source $HOME/.vim/keyboard.vim
