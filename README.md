@@ -2,8 +2,7 @@ VIM Settings
 ============
 
 * Adds the Zenburn theme to VIM and the Gnome Terminal
-* Installs Pathogen
-* Installs the following bundles with Pathogen:
+* Installs pathogen, vim-polyglot, and nerdtree
 
 Installation
 ------------
