@@ -1,6 +1,0 @@
-[submodule "bundle/vim-polyglot"]
-    path = bundle/vim-polyglot
-    url = https://github.com/sheerun/vim-polyglot.git
-[submodule "bundle/vdebug"]
-	path = bundle/vdebug
-	url = https://github.com/joonty/vdebug.git
