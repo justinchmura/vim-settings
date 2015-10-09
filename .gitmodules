@@ -1,18 +1,6 @@
-[submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/vim-markdown"]
-	path = bundle/vim-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "vim-literate-coffeescript"]
-	path = vim-literate-coffeescript
-	url = https://github.com/mintplant/vim-literate-coffeescript.git
-[submodule "bundle/vim-literate-coffeescript"]
-	path = bundle/vim-literate-coffeescript
-	url = https://github.com/mintplant/vim-literate-coffeescript.git
+[submodule "bundle/vim-polyglot"]
+    path = bundle/vim-polyglot
+    url = https://github.com/sheerun/vim-polyglot.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
