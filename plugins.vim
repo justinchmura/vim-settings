@@ -1,7 +1,5 @@
 runtime autoload/autoload/pathogen.vim
-" call pathogen#runtime_append_all_bundles()
-call pathogen#infect()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " Required by Pathogen Plugin Manager
 if has("autocmd")

@@ -22,7 +22,8 @@ Link standard vim settings file to the `.vim` directory
 Fetch all bundle submodules
 
     cd ~/.vim
-    git submodule update --init
+    git submodule init
+    git submodule update
 
 Configure Zenburn
 -----------------
