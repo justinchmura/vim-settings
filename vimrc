@@ -46,6 +46,16 @@ if has("autocmd")
   filetype plugin on
 endif
 
+" Commands {{{
+fun! StripTrailingWhitespace()
+  " don't strip on these filetypes
+  if &ft =~ 'markdown'
+    return
+  endif
+  %s/\s\+$//e
+endfun
+autocmd BufWritePre * call StripTrailingWhitespace()
+
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
 
