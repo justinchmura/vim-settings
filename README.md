@@ -8,6 +8,9 @@ VIM Settings
     * [nerdtree](https://github.com/scrooloose/nerdtree) - source tree view
     * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) - toggle comments
     * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) - search for files with ctrlp
+    * vim-airline
+    * vim-airline-themes
+    * vim-fugitive
 
 Usage
 -----
@@ -35,7 +38,7 @@ Change to your home directory
 
 Clone into `.vim` directory
 
-    git clone https://github.com/dustinboston/vim-settings.git .vim
+    git clone https://github.com/justinchmura/vim-settings.git .vim
 
 Link standard vim settings file to the `.vim` directory
 
