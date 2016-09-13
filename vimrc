@@ -36,7 +36,15 @@ endfunction
 map <F11> <Esc>:call ToggleGUI()<cr>
 set guioptions=i
 
+runtime autoload/autoload/pathogen.vim
 execute pathogen#infect()
+
+" Required by Pathogen Plugin Manager
+if has("autocmd")
+  filetype off
+  filetype indent on
+  filetype plugin on
+endif
 
 " JSON
 au BufRead,BufNewFile *.json set ft=json syntax=javascript
@@ -74,4 +82,4 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " NERDTree
 map <silent> <C-n> :NERDTreeToggle<CR>
 
-colorscheme jellybeans
+colorscheme jellybeans/colors/jellybeans
