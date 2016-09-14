@@ -8,16 +8,16 @@ VIM Settings
     * [nerdtree](https://github.com/scrooloose/nerdtree) - source tree view
     * [nerdcommenter](https://github.com/scrooloose/nerdcommenter) - toggle comments
     * [ctrlp](https://github.com/ctrlpvim/ctrlp.vim) - search for files with ctrlp
-    * vim-airline
-    * vim-airline-themes
-    * vim-fugitive
+    * [vim-airline](https://github.com/vim-airline/vim-airline) - better status bar
+    * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) - themes for airline
+    * [vim-fugitive](https://github.com/tpope/vim-fugitive) - shows git branch in airline bar
 
 Usage
 -----
 
 *General*
 
-* `\c`: toggle comments
+* `\ci`: toggle comments
 * `ctrl+p`: search for a file
 
 *NERDTree*
@@ -49,14 +49,3 @@ Fetch all bundle submodules
     cd ~/.vim
     git submodule init
     git submodule update
-
-Configure Zenburn
------------------
-
-To apply the Zenburn theme to your default Gnome Terminal, run the 
-`gnome-terminal-zenburn.sh` script and then follow the prompts.
-
-    cd ~/.vim
-    ./gnome-terminal-zenburn.sh
-
-
