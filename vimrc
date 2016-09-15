@@ -8,11 +8,6 @@ syntax on
 
 set autoindent
 set smartindent
-" set smarttab
-" set shiftwidth=2
-" set softtabstop=2
-" set tabstop=2
-" set expandtab
 set nowrap
 
 set ignorecase                  " Ignore case of searches.
@@ -35,6 +30,20 @@ function! ToggleGUI()
 endfunction
 map <F11> <Esc>:call ToggleGUI()<cr>
 set guioptions=i
+
+" Space/Tab Toggle
+set noexpandtab
+set softtabstop=0
+set tabstop=4
+set shiftwidth=4
+function TabToggle()
+	if &expandtab
+		set noexpandtab
+	else
+		set expandtab
+	endif
+endfunction
+nmap <F9> mz:execute TabToggle()<CR>'z
 
 runtime autoload/autoload/pathogen.vim
 execute pathogen#infect()
