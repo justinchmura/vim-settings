@@ -11,6 +11,7 @@ VIM Settings
     * [vim-airline](https://github.com/vim-airline/vim-airline) - better status bar
     * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes) - themes for airline
     * [vim-fugitive](https://github.com/tpope/vim-fugitive) - shows git branch in airline bar
+    * [syntastic](https://github.com/vim-syntastic/syntastic.git) - run local eslint on js files
 
 Usage
 -----
@@ -28,6 +29,15 @@ Usage
 * `I`: Toggle hidden files
 * `m`: Show the NERD Tree menu
 * `R`: Refresh the tree, useful if files change outside of Vim
+
+*Syntastic*
+
+Currently, it is setup to run the local (as in the one in `node_modules`) `eslint` anytime opening/closing a `.js` file.
+
+[Full List of Commands](https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt)
+
+* `SyntasticCheck`: run check manually
+* `SyntasticReset`: clear error highlighting and close error window
 
 Installation
 ------------
