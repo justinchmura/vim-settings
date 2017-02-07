@@ -48,6 +48,24 @@ nmap <F9> mz:execute TabToggle()<CR>'z
 runtime autoload/autoload/pathogen.vim
 execute pathogen#infect()
 
+" Syntastic settings
+" --------------------------------
+"
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+
+let g:syntastic_javascript_checkers = ['eslint']
+
+function! UpdateEslintPath()
+	let g:eslint_path = system('npm bin') . '\eslint'
+	let g:syntastic_javascript_eslint_exec = substitute(g:eslint_path, '\(.*\)\n\(.*\)', '\1\2', '')
+endfunction
+
+" Set eslint path on opening .js or .jsx
+au BufRead,BufNewFile *.js,*.jsx execute UpdateEslintPath()
+
 " Required by Pathogen Plugin Manager
 if has("autocmd")
   filetype off
