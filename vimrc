@@ -7,6 +7,7 @@ set hidden
 syntax on
 
 set autoindent
+set ai
 set smartindent
 set nowrap
 
