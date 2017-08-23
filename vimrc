@@ -6,11 +6,6 @@ set autoread                    "Reload files changed outside vim
 set hidden
 syntax on
 
-set autoindent
-set ai
-set smartindent
-set nowrap
-
 set ignorecase                  " Ignore case of searches.
 set splitbelow                  " New window goes below
 set splitright                  " New windows goes right
@@ -20,6 +15,12 @@ set paste
 filetype plugin on
 
 set guifont=Consolas:h11:cANSI
+
+set number
+set autoindent
+set ai
+set smartindent
+set nowrap
 
 " GUI Toggle
 function! ToggleGUI()
