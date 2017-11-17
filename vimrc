@@ -34,7 +34,7 @@ map <F11> <Esc>:call ToggleGUI()<cr>
 set guioptions=i
 
 " Space/Tab Toggle
-set noexpandtab
+set expandtab
 set softtabstop=0
 set tabstop=4
 set shiftwidth=4
